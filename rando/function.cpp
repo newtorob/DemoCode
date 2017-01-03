@@ -3,7 +3,7 @@
 using namespace std;
 
 int tetu(int age);
-int salary (int salary_of_user);
+int salary (int &salary_of_user);
 
 int main()
 {
@@ -36,7 +36,7 @@ int tetu(int age)
     return square;
 }
 
-int salary(int salary_of_user)
+int salary(int &salary_of_user)
 {
     int salary_doubled;
 
