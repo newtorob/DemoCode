@@ -45,8 +45,20 @@ int main()
         {
             if (sales_ofOffice[theOffice] > highSale)
                 highSale = sales_ofOffice[theOffice];
-            else if 
+            else if (sales_ofOffice[theOffice] < lowSale)
+                lowSale = sales_ofOffice[theOffice];
         }
 
+        //display the results
+
+        cout << fixed << showpoint << setprecision(2);
+        cout << "Total Sales  $" <<setw(9) << saleTotal << endl;
+        cout << "Average Sales $" << setw(9) << saleAvg << endl;
+        cout << "Highest Sales $" << setw (9) <<highSale << endl;
+        cout << "Lowest Sales $" << setw(9) << lowSale << endl;
+
+
     }
+
+    return 0;
 }
